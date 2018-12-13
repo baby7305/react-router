@@ -1,25 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
-
-class Index extends Component {
-  render() {
-    return (
-      <h2>Home</h2>
-    );
-  }
-}
-
-const About = () => (
-  <div>
-    <h2> About </h2>
-  </div>
-);
-const Users = () => (
-  <div>
-    <h2> Users </h2>
-  </div>
-);
+import About from "./home/About";
+import Index from "./home/Home";
+import Users from "./home/Users";
 
 class App extends Component {
   render() {
